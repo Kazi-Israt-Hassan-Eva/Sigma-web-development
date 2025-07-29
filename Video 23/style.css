@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.box{
+    background-color: aqua;
+    border: solid 2px black;
+    display: inline-block;
+    margin: 45px;
+    padding: 45px;
+}
+
+.box1{
+    background-color: aqua;
+    border: solid 2px black;
+    display: flex;
+    justify-content: center;
+    margin: 45px;
+    padding: 45px;
+}

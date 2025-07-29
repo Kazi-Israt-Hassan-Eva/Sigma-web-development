@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.box,h1 {
+    box-sizing: border-box;
+    border: solid black 2px;
+    /* width: 2048 px; */
+    width: 80vw;
+    /* VIEW PORT */
+    height: 10vh;
+    margin: auto;
+    background-color: beige;
+}
+
+.container {
+    padding: 10px;
+    box-sizing: border-box;
+    border: solid black 2px;
+    /* width: 2048 px; */
+    width: 80vw;
+    /* VIEW PORT */
+    min-height: 80vh;
+    font-size: 30px;
+    margin: 20px  auto;
+    background-color: beige;
+}
+
+.container p{
+    font: size 2em; 
+    text-align: justify;
+}
+
+.container > div{
+    box-sizing: border-box;
+    border: solid black 2px;
+    width: 50%;
+    
+}
+
+.container > div > div{
+    box-sizing: border-box;
+    border: solid rgb(219, 11, 11) 2px;
+    width: 50%;
+}

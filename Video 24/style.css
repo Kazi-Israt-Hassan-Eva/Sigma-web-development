@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    border: solid black 2px;
+    padding: 34px;
+    box-shadow: 1px 8px 20px 1px cadetblue;
+
+}
+
+.box>p {
+    text-shadow: -2px 5px 9px rgb(34, 61, 61);
+    ;
+}
