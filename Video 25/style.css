@@ -1,0 +1,28 @@
+nav ul li {
+    /* list-style: decimal; */
+    /* list-style: "🙂";
+    background-color: yellow;
+    list-style-position: inside;
+    border: solid black 2px; */
+    /* list-style-image: url("https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg"); */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    height: 10vh;
+    width: 100vw;
+    margin: auto;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    padding: 20px;
+}
