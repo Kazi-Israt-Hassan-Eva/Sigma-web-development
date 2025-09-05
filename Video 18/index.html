@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Boxmodel</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            background-color: aqua;
+        }
+
+        .box1 {
+            color: rgb(163, 163, 44);
+            margin: 25px;
+            padding: 10px;
+            border: 2px solid black;
+            border-radius: 5px;
+            height: 100px;
+            box-sizing: border-box;
+            /* if we dont use it then only content value will be 200, if use border+element +padding = 200 */
+        }
+
+        .box2 {
+            color: red;
+            margin: 25px;
+            padding: 10px;
+            border: 2px solid rgb(255, 22, 22);
+            border-radius: 5px;
+            height: 100px;
+            box-sizing: border-box;
+            /* if we dont use it then only content value will be 200, if use border+element +padding = 200 */
+        }
+        /* margin claps = overlaping margins then use max margin */
+    </style>
+</head>
+
+<body>
+    <div class="box box1">
+        I am a box
+    </div>
+
+    <div class="box box2">
+        I am another box
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Shadows and Outlines</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .box {
+            /* border: 2px solid rgb(0, 0, 0); */
+            padding: 10px;
+            box-shadow: -1px 1px 10px 2px  rebeccapurple;
+            outline: 2px solid red;
+            outline-offset: 10px;
+        }
+
+        .box p{
+            text-shadow:1px 0px 1px red ;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+       <p>I am a BOX</p> 
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS selector</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+
+        div{
+            /* Element Selector */
+            background-color: teal;
+        }
+
+        .red{
+            /* class selector */
+            background-color: red;
+        }
+
+        #green{
+            /* id selector */
+            background-color: green;
+        }
+
+        /* desendant selector */
+        div p {
+            background-color: blue;
+        }
+
+        /* Child selectior */
+        div > p{
+            background-color: black;
+            color: white;
+        }
+
+        /* pesudo Selector */
+        a:visited{
+            color: rgb(116, 193, 1);
+        }
+        a:link{
+            color: blue;
+        }
+        a:hover{
+            color: red;
+        }
+        a:active{
+            background-color: blue;
+        }
+
+        p:first-child{
+            background-color: aqua;
+            color: rgb(31, 27, 5);
+        }
+
+    </style>
+</head>
+<body>
+    <div id="green">
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda consectetur officia facere?</p>
+    </div>
+
+    <div id="green">
+        i am also a div
+    </div>
+
+    <div class="red">
+        i am a div too
+    </div>
+
+    <div class="one">
+        <p>i am 1st</p>
+        <p>i am second</p>
+    </div>
+
+    <a href="https://www.google.com/">Google</a>
+    <a href="https://www.linkedin.com/">Linkdin</a>
+</body>
+</html>
