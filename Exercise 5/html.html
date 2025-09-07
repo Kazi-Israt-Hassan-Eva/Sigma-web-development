@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 5</title>
+    <style>
+:root{
+    --color: rgb(4, 4, 146);
+}
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        nav {
+            position: sticky;
+            top: 0;
+            background-color: var(--color);
+            /* padding: 20px; */
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline-flex;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            padding: 20px;
+            color: white;
+        }
+
+        .upperContainer {
+            background-color: rgb(175, 175, 247);
+            height: 800px;
+            margin: 50px;
+            border: 2px solid rgb(129, 129, 250);
+        }
+
+        .box {
+            display: flex;
+            box-sizing: border-box;
+
+        }
+
+        .box1 {
+            height: 600px;
+            width: 40vw;
+            background-color: brown;
+            margin: 100px auto;
+
+        }
+
+        .box2 {
+            height: 600px;
+            width: 40vw;
+            background-color: rgb(67, 39, 208);
+            margin: 100px auto;
+        }
+
+        .secondContainer{
+            margin-top: 20px;
+            margin-bottom: 50px;
+            margin-right: 80px;
+            margin-left: 80px;
+            border: 2px solid black;
+            border-radius: 30px ;
+            padding: 30px;
+        }
+
+        h1{
+            display: flex;
+            justify-content: center;
+        }
+
+        h3{
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+        }
+
+        footer{
+            background-color: var(--color);
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            color: white;
+        }
+
+        .whatsapp{
+            border: 1px solid rgb(4, 5, 4);
+            height: 50px;
+            width: 50px;
+            background-color:rgb(61, 250, 23) ;
+            border-radius:50px ;
+            margin-top: -55px;
+            margin-left:95.5vw;
+            position: sticky;
+            bottom: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact us</a></li>
+        </ul>
+    </nav>
+
+    <div class="upperContainer">
+
+        <div class="box">
+            <div class="box1">
+
+            </div>
+            <div class="box2">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="secondContainer">
+        <h1>Welcome to Sigma</h1>
+        <h3>Web Develpment Course</h3>
+    </div>
+
+    <footer>
+        <p>Copyright</p>
+    </footer>
+
+    <div class="whatsapp">
+
+    </div>
+</body>
+
+</html>

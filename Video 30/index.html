@@ -1,20 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Variables</title>
     <style>
-        *{
+        /* global variable */
+        :root {
+            --color: rgb(111, 252, 95);
+            --seccolor: rgb(203, 251, 201);
+            --defpad: 40px;
+        }
+
+        * {
             padding: 0;
             margin: 0;
         }
 
-        div:first-child{
-            background-color: antiquewhite;
+        .nav {
+            /* background-color: rgb(155, 244, 147); */
+            background-color: var(--color);
+        }
+
+        ul {
+            display: flex;
+        }
+
+        ul li:first-child {
+            --color: rgb(243, 137, 123);
+            background-color: var(--color);
+        }
+
+        .nav ul li {
+            list-style: none;
+            padding: var(--defpad);
+        }
+
+        .container {
+            /* background-color: rgb(201, 247, 197); */
+            background-color: var(--seccolor);
+
         }
     </style>
 </head>
+
 <body>
     <div class="nav">
         <ul>
@@ -25,7 +55,10 @@
     </div>
 
     <div class="container">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam corrupti cum esse alias dolor enim adipisci neque, eligendi quam, delectus exercitationem, voluptates nobis id ut natus ipsam sit recusandae explicabo? Illum esse error harum non.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam corrupti cum esse alias dolor enim adipisci
+        neque, eligendi quam, delectus exercitationem, voluptates nobis id ut natus ipsam sit recusandae explicabo?
+        Illum esse error harum non.
     </div>
 </body>
+
 </html>

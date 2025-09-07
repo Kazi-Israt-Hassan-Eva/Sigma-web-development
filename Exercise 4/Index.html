@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 4</title>
+    <style>
+        :root {
+            --color: rgb(84, 254, 84);
+            --seccolor: #aaffaa;
+            --bodycolor:#d4ffd4;;
+            --tabcolor: rgb(113, 113, 255);
+            --tabseccolor: rgb(179, 179, 255);
+            --tabbodycolor:rgb(218, 218, 254);
+            --mobilecolor: rgb(255, 113, 241);
+            --mobileseccolor: rgb(255, 179, 241);
+            --mobilebodycolor: rgb(255, 216, 248);
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .nav {
+            background-color: var(--seccolor);
+        }
+
+        .nav ul {
+            display: flex;
+
+        }
+
+        .nav ul li {
+            list-style: none;
+            padding: 20px;
+            text-decoration: none;
+        }
+
+        .nav ul li a {
+            text-decoration: none;
+            
+        }
+
+        ul li:first-child {
+            background-color: var(--color);
+        }
+
+        body{
+            background-color: var(--bodycolor);
+        }
+
+        @media only screen and (max-width:750px) {
+            .nav {
+                background-color: var(--tabseccolor);
+            }
+
+            .nav ul {
+                display: flex;
+
+            }
+
+            .nav ul li {
+                list-style: none;
+                padding: 20px;
+            }
+
+            ul li:first-child {
+                background-color: var(--tabcolor);
+            }
+
+             body{
+            background-color: var(--tabbodycolor);
+        }
+        }
+
+        @media only screen and (max-width:455px) {
+            .nav {
+                background-color: var(--mobileseccolor);
+            }
+
+            .nav ul {
+                display: flex;
+
+            }
+
+            .nav ul li {
+                list-style: none;
+                padding: 20px;
+            }
+
+            ul li:first-child {
+                background-color: var(--mobilecolor);
+            }
+
+             body{
+            background-color: var(--mobilebodycolor);
+        }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Contact us</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>

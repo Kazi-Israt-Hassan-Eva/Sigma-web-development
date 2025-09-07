@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More or CSS selector</title>
+    <style>
+        /* .box:first-child {
+            background-color: red;
+        }
+
+        .box::first-letter {
+            color: rgb(60, 40, 40);
+        }
+
+        .box::first-line {
+            color: rgb(8, 142, 4);
+        } */
+
+        .boxs * {
+            border: 2px solid black;
+            color: red;
+        }
+
+        /* [data-color="primary"]{
+            padding: 30px;
+        } */
+
+        /* p , a , .box , [data-color="primary"]{
+            padding: 30px;
+        }
+
+        .box:nth-child(even){
+            background-color: brown;
+        }
+
+        .box:nth-last-child(1){
+            background-color: rgb(74, 132, 132);
+        } */
+
+        .boxs::before {
+            content: "Eva is good";
+            color: blue;
+        }
+
+        .boxs::after {
+            content: "Eva is good";
+        }
+
+        ::selection {
+            color: yellow;
+            background-color: black;
+        }
+
+        input::placeholder{
+            color: green;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="boxs">
+        <div class="box" data-color="primary">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit beatae tenetur facere. Veniam, hic natus in
+            temporibus aspernatur, expedita, veritatis repudiandae possimus odit quia sapiente officia deleniti facere
+            consequuntur enim itaque illum inventore ex rerum similique? Beatae voluptatum dolore quisquam optio
+            eligendi nisi amet minus aperiam, maxime, commodi sit fugit aut quo. Expedita, quasi, dolore laboriosam odit
+            minima illo quidem optio eum sed voluptates ullam explicabo nulla, facilis quis fugit harum provident dolor
+            natus soluta fuga architecto officiis iusto ex deserunt. Excepturi est natus quibusdam, laborum eveniet
+            voluptatem neque ducimus at qui reiciendis dolorem aliquam facere iste corporis voluptas sunt atque
+            officiis. Laudantium explicabo laborum sed nesciunt commodi, iure provident perferendis hic voluptate ipsa
+            illum similique quam maiores ratione ex in quisquam repellendus.
+        </div>
+        <div class="box">
+            i am a box
+        </div>
+        <div class="box">
+            i am a box
+        </div>
+        <div class="box">
+            i am a box
+        </div>
+        <div class="box">
+            i am a box
+        </div>
+        <div class="box">
+            i am a box
+        </div>
+        <div class="box">
+            i am a box
+        </div>
+
+        <input type="text" placeholder="Type your name here">
+    </div>
+</body>
+
+</html>
