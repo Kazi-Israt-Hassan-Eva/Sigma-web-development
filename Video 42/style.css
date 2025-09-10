@@ -1,0 +1,123 @@
+:root{
+    --backgroundcolor: rgb(208, 208, 208);
+    --hoverbackground:aqua;
+}
+
+.boxs{
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.box1{
+    height: 50px;
+    width: 80px;
+    background-color: var(--backgroundcolor);
+}
+
+.box1:hover{
+    height: 50px;
+    width: 80px;
+    background-color: var(--hoverbackground);
+    transform: scaleX(1.5);
+    opacity: 0.5;
+}
+
+.box2{
+    height: 50px;
+    width: 80px;
+    background-color:rgb(208, 208, 208);
+}
+
+.box2:hover{
+    height: 50px;
+    width: 80px;
+    background-color: aqua;
+    transform: scaleY(1.5);
+    opacity: 0.5;
+}
+
+.box3{
+    height: 50px;
+    width: 80px;
+    background-color: rgb(162, 162, 162);
+}
+
+.box3:hover{
+    height: 50px;
+    width: 80px;
+    background-color: aqua;
+    transform: scale(1.5);
+    opacity: 0.5;
+}
+
+.box4{
+    height: 50px;
+    width: 80px;
+    background-color: aqua;
+}
+
+.box4:hover{
+    height: 50px;
+    width: 80px;
+    background-color: var(--hoverbackground);
+    transform:rotateX(50deg);
+    opacity: 0.5;
+}
+
+.box5{
+    height: 50px;
+    width: 80px;
+    background-color: aqua;
+}
+
+.box5:hover{
+    height: 50px;
+    width: 80px;
+    background-color: var(--hoverbackground);
+    transform:rotateY(50deg);
+    opacity: 0.5;
+}
+
+.box6{
+    height: 50px;
+    width: 80px;
+    background-color: aqua;
+}
+
+.box6:hover{
+    height: 50px;
+    width: 80px;
+    background-color: var(--hoverbackground);
+    transform:rotatez(50deg);
+    opacity: 0.5;
+}
+
+.box7{
+    height: 50px;
+    width: 80px;
+    background-color: aqua;
+}
+
+.box7:hover{
+    height: 50px;
+    width: 80px;
+    background-color: var(--hoverbackground);
+    transform:skewX(30deg);
+    opacity: 0.5;
+}
+
+.box8{
+    height: 50px;
+    width: 80px;
+    background-color: aqua;
+}
+
+.box8:hover{
+    height: 50px;
+    width: 80px;
+    background-color: var(--hoverbackground);
+    transform:skewY(30deg);
+    opacity: 0.5;
+}

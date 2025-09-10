@@ -6,14 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercise 5</title>
     <style>
-:root{
-    --color: rgb(4, 4, 146);
-}
+        :root {
+            --color: rgb(4, 4, 146);
+        }
+
         * {
             padding: 0;
             margin: 0;
         }
 
+        body{
+            background-color: black;
+        }
         nav {
             position: sticky;
             top: 0;
@@ -34,7 +38,7 @@
 
         .upperContainer {
             background-color: rgb(175, 175, 247);
-            height: 800px;
+            height: 1000px;
             margin: 50px;
             border: 2px solid rgb(129, 129, 250);
         }
@@ -46,7 +50,7 @@
         }
 
         .box1 {
-            height: 600px;
+            height: 800px;
             width: 40vw;
             background-color: brown;
             margin: 100px auto;
@@ -54,34 +58,34 @@
         }
 
         .box2 {
-            height: 600px;
+            height: 800px;
             width: 40vw;
             background-color: rgb(67, 39, 208);
             margin: 100px auto;
         }
 
-        .secondContainer{
+        .secondContainer {
             margin-top: 20px;
             margin-bottom: 50px;
             margin-right: 80px;
             margin-left: 80px;
-            border: 2px solid black;
-            border-radius: 30px ;
+            border: 2px solid rgb(255, 255, 255);
+            border-radius: 30px;
             padding: 30px;
         }
 
-        h1{
+        h1 {
             display: flex;
             justify-content: center;
         }
 
-        h3{
+        h3 {
             margin-top: 10px;
             display: flex;
             justify-content: center;
         }
 
-        footer{
+        footer {
             background-color: var(--color);
             padding: 20px;
             display: flex;
@@ -89,16 +93,153 @@
             color: white;
         }
 
-        .whatsapp{
+        .whatsapp {
             border: 1px solid rgb(4, 5, 4);
             height: 50px;
             width: 50px;
-            background-color:rgb(61, 250, 23) ;
-            border-radius:50px ;
+            background-color: rgb(61, 250, 23);
+            border-radius: 50px;
             margin-top: -55px;
-            margin-left:95.5vw;
+            margin-left: 95.5vw;
             position: sticky;
             bottom: 4px;
+        }
+
+        @media only screen and (max-width:765px) {
+            .upperContainer {
+                background-color: rgb(175, 175, 247);
+                height: 400px;
+                margin: 30px;
+                border: 2px solid rgb(129, 129, 250);
+            }
+
+            .box {
+                display: flex;
+                box-sizing: border-box;
+
+            }
+
+            .box1 {
+                height: 300px;
+                width: 40vw;
+                background-color: brown;
+                margin: 50px auto;
+
+            }
+
+            .box2 {
+                height: 300px;
+                width: 40vw;
+                background-color: rgb(67, 39, 208);
+                margin: 50px auto;
+            }
+
+            .secondContainer {
+                margin-top: 100px;
+                margin-bottom: 100px;
+                margin-right: 80px;
+                margin-left: 80px;
+                border: 2px solid black;
+                border-radius: 30px;
+                padding: 30px;
+            }
+
+            footer {
+                background-color: var(--color);
+                padding: 20px;
+                display: flex;
+                justify-content: center;
+                color: white;
+                margin-bottom: 0;
+            }
+
+            .whatsapp {
+                border: 1px solid rgb(4, 5, 4);
+                height: 50px;
+                width: 50px;
+                background-color: rgb(61, 250, 23);
+                border-radius: 50px;
+                margin-top: -55px;
+                margin-left: 91vw;
+                position: sticky;
+                bottom: 4px;
+            }
+
+        }
+
+        @media only screen and (max-width:455px) {
+            .upperContainer {
+                background-color: rgb(175, 175, 247);
+                height: 200px;
+                margin: 30px;
+                border: 2px solid rgb(129, 129, 250);
+            }
+
+            .box {
+                display: flex;
+                box-sizing: border-box;
+
+            }
+
+            .box1 {
+                height: 150px;
+                width: 40vw;
+                background-color: brown;
+                margin: 25px auto;
+
+            }
+
+            .box2 {
+                height: 150px;
+                width: 40vw;
+                background-color: rgb(67, 39, 208);
+                margin: 25px auto;
+            }
+
+            .secondContainer {
+                margin-top: 25px;
+                margin-bottom: 25px;
+                margin-right: 80px;
+                margin-left: 80px;
+                border: 2px solid black;
+                border-radius: 30px;
+                padding: 30px;
+            }
+
+            h1 {
+                display: flex;
+                justify-content: center;
+                font-size: 25px;
+            }
+
+            h3 {
+                margin-top: 5px;
+                display: flex;
+                justify-content: center;
+                font-size: 15px;
+            }
+
+            footer {
+                background-color: var(--color);
+                padding: 20px;
+                display: flex;
+                justify-content: center;
+                color: white;
+                margin-bottom: 0;
+            }
+
+            .whatsapp {
+                border: 1px solid rgb(4, 5, 4);
+                height: 40px;
+                width: 40px;
+                background-color: rgb(61, 250, 23);
+                border-radius: 50px;
+                margin-top: -55px;
+                margin-left: 88vw;
+                position: sticky;
+                bottom: 4px;
+            }
+
         }
     </style>
 </head>
