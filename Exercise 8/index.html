@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 8</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+
+        .ball {
+            background-color: brown;
+            width: 100px;
+            height: 100px;
+            border-radius: 80px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            animation: footballDropX 7s linear 1s infinite, footballDropY 1s ease-out 1s infinite alternate;
+
+
+        }
+
+        .container {
+            background-color: rgb(209, 167, 252);
+            width: 100vw;
+            height: 50vh;
+            position: relative;
+        }
+
+        @keyframes footballDropY {
+            from {
+                bottom: 0;
+
+            }
+
+            to {
+                bottom: 100%;
+            }
+        }
+
+        @keyframes footballDropX {
+            from {
+                left: 0;
+            }
+
+            to {
+                left: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="ball">
+
+        </div>
+    </div>
+</body>
+
+</html>

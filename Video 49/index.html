@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Object Fit and Position</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            height: 465px;
+
+            width: 422px;
+            background-color: rgb(46, 46, 129);
+            border: 2px solid red;
+            background-image: url(image/gratisography-augmented-reality-800x525.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            
+        }
+
+        img {
+            width: 422px;
+            height: 465px;
+            object-fit: cover;
+            /* object-position: top right; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- <img src="image/gratisography-augmented-reality-800x525.jpg" alt=""> -->
+    </div>
+</body>
+
+</html>
