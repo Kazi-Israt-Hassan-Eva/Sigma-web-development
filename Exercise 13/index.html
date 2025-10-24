@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <style>
+        .card {
+            margin: 10px;
+            padding: 3px;
+            display: flex;
+            border: 2px solid black;
+            border-radius: 10px;
+            width: 1100px;
+            height: 160px;
+            justify-content: center;
+            /* align-items: center; */
+        }
+
+        .image img {
+            width: 250px;
+            height: 160px;
+            border-radius: 10px;
+        }
+
+        .image {
+            position: relative;
+        }
+
+        .capsule {
+            position: absolute;
+            bottom: 2px;
+            right: 5px;
+            z-index: 10;
+            background-color: rgb(61, 61, 61);
+            color: rgb(253, 254, 255);
+            padding: 3px;
+            border-radius: 3px;
+            opacity: 0.8;
+        }
+
+        .textSection h1,
+        p {
+            margin-top: 0;
+            padding-left: 5px;
+        }
+
+        .textSection h1 {
+            font-size: 22px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="image">
+                <img src="image/hero image.avif" alt="">
+                <div class="capsule">31:06</div>
+            </div>
+            <div class="textSection">
+                <h1>Installing VS Code & How Websites Work | Sigma Web Development Course - Tutorial #1
+                </h1>
+                <p>CodeWithHarry . 727k views . 2 months ago</p>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
